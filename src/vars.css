@@ -1,0 +1,30 @@
+:root {
+  --color-bg: #E3E8E7;
+  --color-bg-dark: #022601;
+  
+  --color-title: #0D0D0D;
+  --color-navbar-text: #022601;
+  --color-text-light: #f5f9f8;
+  --color-text-dark: #333;
+
+  --color-card: #69BFB7;
+  --color-card-primary: #80cbc4;
+
+  --color-hover-bg-dark: #06F822;
+  --color-hover-bg-ligth: #2EAE0F;
+  
+  --color-decorations: #2EAE0F;
+
+  --color-aux: #666;
+  --color-aux-2: #79BF65;
+  --color-aux-3: #1E590F;
+  --color-green: #008000;
+  
+  --color-overlay: rgba(44, 125, 118, 0.1);
+  --color-shadow: rgba(29, 88, 83, 0.15); 
+
+  --title-font-size: 3.4rem;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Montserrat', sans-serif;
+  --font-logo: "Oleo Script", sans-serif;
+}

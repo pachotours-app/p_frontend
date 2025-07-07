@@ -1,0 +1,418 @@
+[
+  {
+    "id":"1",
+    "name": "Laguna del Magdalena",
+    "category":"Nature - Adventure",
+    "image": "/tours/macizo.jpg",
+    "description":"The Colombian Massif (Macizo Colombiano) is one of Colombia's most important ecological and hydrological regions. Located in the Andean region, it spans parts of the departments of Cauca, Huila, and Nariño. This mountainous area is known as the Water Star of Colombia (Estrella Fluvial de Colombia) because it is the birthplace of several major rivers, including the Magdalena, Cauca, Patía, and Putumayo rivers, which supply water to vast parts of the country.",
+    "short":"Magdalena river source",
+    "rating":5.0,
+    "route":"route",
+    "notes": "You, allowing you to choose the mode of travel that best fits your adventure style. Contact us for pricing details",
+    "price_detail": "The price depends on the number of people, let's connect to talk about it",
+    "details": [
+      {
+        "label": "Time",
+        "value": "5 days",
+        "icon": "mingcute:alarm-2-fill",
+        "type": "time"
+      },
+      {
+        "label": "Type",
+        "value": "horse riding",
+        "icon": "mdi:horse-human",
+        "type": "tourType"
+      },
+      {
+        "label": "Price",
+        "value": "300.000",
+        "icon": "healthicons:money-bag",
+        "type": "price"
+      }
+    ]
+  },
+  {
+    "id":"2",
+    "name": "Los Tres Chorros",
+    "category":"Nature - Adventure",
+    "image": "/tours/tres_chorros.jpeg",
+    "description":"Los Tres Chorros is a breathtaking waterfall located in the Pradera village, about 18 kilometers from the town of San Agustín, in the Huila department of Colombia. This stunning 30-meter-high waterfall is formed by the Mulales River, which originates in the Páramo de la Soledad, a high-altitude moorland rich in biodiversity",
+    "short":"Landscape - Adventure",
+    "rating":4.9,
+    "route":"route",
+    "notes": "You can explore the route on horseback, by car, or on foot, allowing you to choose the mode of travel that best fits your adventure style. Contact us for pricing details",
+    "price_detail": "The price depends on the number of people, let's connect to talk about it",
+    "details": [
+      {
+        "label": "Time",
+        "value": "1 day",
+        "icon": "mingcute:alarm-2-fill",
+        "type": "time"
+      },
+      {
+        "label": "Type",
+        "value": "horse riding",
+        "icon": "mdi:horse-human",
+        "type": "tourType"
+      },
+      {
+        "label": "Price",
+        "value": "300.000",
+        "icon": "healthicons:money-bag",
+        "type": "price"
+      }
+    ]
+  },
+  {
+    "id":"3",
+    "name": "Purutal - Chaquira",
+    "category":"Nature - Archeology",
+    "image": "/tours/chaquira.webp",
+    "description":"The Tablón, Chaquira, La Pelota, and El Purutal route, offers a captivating journey through the heart of ancient pre-Columbian culture, showcasing remarkable archaeological sites set amidst stunning natural landscapes.",
+    "short":"Archeology",
+    "rating":4.7,
+    "route":"Route",
+    "notes": "You can explore the route on horseback, by car, or on foot, allowing you to choose the mode of travel that best fits your adventure style. Contact us for pricing details",
+    "price_detail": "The price depends on the number of people, let's connect to talk about it",
+    "details": [
+      {
+        "label": "Time",
+        "value": "4 hours",
+        "icon": "mingcute:alarm-2-fill",
+        "type": "time"
+      },
+      {
+        "label": "Type",
+        "value": "horse riding",
+        "icon": "mdi:horse-human",
+        "type": "tourType"
+      },
+      {
+        "label": "Price",
+        "value": "150.000",
+        "icon": "healthicons:money-bag",
+        "type": "price"
+      }
+    ]
+  },
+  {
+    "id":"4",
+    "name": "Cascada el Cinco",
+    "category":"Nature",
+    "image": "/tours/el_cinco.jpeg",
+    "description":"Cascada El Cinco is a picturesque waterfall located in the La Estrella village, approximately 5 kilometers from the main park of San Agustín, in the Huila department of Colombia.",
+    "short":"Landscape",
+    "rating":4.8,
+    "route":"route",
+    "notes": "You can explore the route on horseback or walking and visit beautifull landscapes, you need to pay to entry. Contact us for pricing details",
+    "price_detail": "The price depends on the number of people, let's connect to talk about it",
+    "details": [
+      {
+        "label": "Time",
+        "value": "4 hours",
+        "icon": "mingcute:alarm-2-fill",
+        "type": "time"
+      },
+      {
+        "label": "Type",
+        "value": "horse riding",
+        "icon": "mdi:horse-human",
+        "type": "tourType"
+      },
+      {
+        "label": "Price",
+        "value": "150.000",
+        "icon": "healthicons:money-bag",
+        "type": "price"
+      }
+    ]
+  },
+  {
+    "id":"5",
+    "name": "sporadic service",
+    "category":"Nature - Adventure",
+    "image": "/tours/sporadic.jpg",
+    "description":"This service is for people that want to have a short adventure around san agustin.",
+    "short":"landscape",
+    "rating":4.6,
+    "route":"route",
+    "notes": "You can visit beautifull landscapes and museums. Contact us for pricing details",
+    "price_detail": "The price depends on the number of people, let's connect to talk about it",
+    "details": [
+      {
+        "label": "Time",
+        "value": "1 hours",
+        "icon": "mingcute:alarm-2-fill",
+        "type": "time"
+      },
+      {
+        "label": "Type",
+        "value": "horse riding",
+        "icon": "mdi:horse-human",
+        "type": "tourType"
+      },
+      {
+        "label": "Price",
+        "value": "60.000",
+        "icon": "healthicons:money-bag",
+        "type": "price"
+      }
+    ]
+  },
+  {
+    "id":"6",
+    "name": "El Tablon",
+    "category":"Nature - archeology",
+    "image": "/tours/tablon.webp",
+    "description":"El Tablón is an archaeological site near San Agustín, known for its ancient stone statues and a small ethnographic museum. It’s part of a hiking route connecting other historic sites like La Chaquira.",
+    "short":"archeology",
+    "rating":4.7,
+    "route":"Route",
+    "notes": "You can explore the route on horseback or walking and visit beautifull landscapes, you need to pay to entry. Contact us for pricing details",
+    "price_detail": "The price depends on the number of people, let's connect to talk about it",
+    "details": [
+      {
+        "label": "Time",
+        "value": "1 hours",
+        "icon": "mingcute:alarm-2-fill",
+        "type": "time"
+      },
+      {
+        "label": "Type",
+        "value": "horse riding",
+        "icon": "mdi:horse-human",
+        "type": "tourType"
+      },
+      {
+        "label": "Price",
+        "value": "60.000",
+        "icon": "healthicons:money-bag",
+        "type": "price"
+      }
+    ]
+  },
+  {
+    "id":"7",
+    "name": "El Tablon - La Chaquira",
+    "category":"Nature - archeology",
+    "image": "/tours/route.jpeg",
+    "description":"El Tablón and La Chaquira are archaeological sites near San Agustín, featuring ancient stone statues and carvings, with scenic trails connecting them through beautiful landscapes.",
+    "short":"archeology",
+    "rating":4.7,
+    "route":"Route",
+    "notes": "You can explore the route on horseback or walking and visit beautifull landscapes, you need to pay to entry. Contact us for pricing details",
+    "price_detail": "The price depends on the number of people, let's connect to talk about it",
+    "details": [
+      {
+        "label": "Time",
+        "value": "2 1/2 hours",
+        "icon": "mingcute:alarm-2-fill",
+        "type": "time"
+      },
+      {
+        "label": "Type",
+        "value": "horse riding",
+        "icon": "mdi:horse-human",
+        "type": "tourType"
+      },
+      {
+        "label": "Price",
+        "value": "90.000",
+        "icon": "healthicons:money-bag",
+        "type": "price"
+      }
+    ]
+  },
+  {
+    "id":"8",
+    "name": "Pelota - Purutal",
+    "category":"Nature - archeology",
+    "image": "/tours/purutal.webp",
+    "description":"La Pelota and El Purutal are archaeological sites near San Agustín, known for their colorful ancient statues and well-preserved ceremonial sculptures surrounded by lush nature.",
+    "short":"archeology",
+    "rating":4.7,
+    "route":"route",
+    "notes": "You can explore the route on horseback or walking and visit beautifull landscapes, you need to pay to entry. Contact us for pricing details",
+    "price_detail": "The price depends on the number of people, let's connect to talk about it",
+    "details": [
+      {
+        "label": "Time",
+        "value": "3 hours",
+        "icon": "mingcute:alarm-2-fill",
+        "type": "time"
+      },
+      {
+        "label": "Type",
+        "value": "horse riding",
+        "icon": "mdi:horse-human",
+        "type": "tourType"
+      },
+      {
+        "label": "Price",
+        "value": "90.000",
+        "icon": "healthicons:money-bag",
+        "type": "price"
+      }
+    ]
+  },
+  {
+    "id":"9",
+    "name": "Pelota - Purutal - Estrecho",
+    "category":"Nature - Archeology",
+    "image": "/tours/estrecho.jpeg",
+    "description":"Explore La Pelota and El Purutal with their colorful ancient statues, and discovering the powerful Estrecho del Magdalena, where Colombia’s greatest river narrows between rocky cliffs.",
+    "short":"landscape",
+    "rating":4.8,
+    "route":"route",
+    "notes": "You can explore the route on horseback or walking and visit beautifull landscapes, you need to pay to entry. Contact us for pricing details",
+    "price_detail": "The price depends on the number of people, let's connect to talk about it",
+    "details": [
+      {
+        "label": "Time",
+        "value": "6 hours",
+        "icon": "mingcute:alarm-2-fill",
+        "type": "time"
+      },
+      {
+        "label": "Type",
+        "value": "horse riding",
+        "icon": "mdi:horse-human",
+        "type": "tourType"
+      },
+      {
+        "label": "Price",
+        "value": "160.000",
+        "icon": "healthicons:money-bag",
+        "type": "price"
+      }
+    ]
+  },
+  {
+    "id":"10",
+    "name": "Estrecho",
+    "category":"Nature",
+    "image": "/tours/estrecho.jpeg",
+    "description":"The Estrecho del Magdalena is the narrowest point of Colombia’s iconic Magdalena River, where the water rushes through a dramatic passage just 2.2 meters wide, surrounded by towering cliffs.",
+    "short":"landscape",
+    "rating":4.8,
+    "route":"route",
+    "notes": "You can explore the route on horseback or walking and visit beautifull landscapes. Contact us for pricing details",
+    "price_detail": "The price depends on the number of people, let's connect to talk about it",
+    "details": [
+      {
+        "label": "Time",
+        "value": "4 hours",
+        "icon": "mingcute:alarm-2-fill",
+        "type": "time"
+      },
+      {
+        "label": "Type",
+        "value": "horse riding",
+        "icon": "mdi:horse-human",
+        "type": "tourType"
+      },
+      {
+        "label": "Price",
+        "value": "120.000",
+        "icon": "healthicons:money-bag",
+        "type": "price"
+      }
+    ]
+  },
+  {
+    "id":"11",
+    "name": "La parada - Santa Monica - Quebradillas",
+    "category":"Nature - Archeology",
+    "image": "/tours/quebradillas.webp",
+    "description":"Discover the rich history of San Agustín with a tour of three incredible archaeological sites: La Parada, known for its zoomorphic and anthropomorphic statues; Santa Mónica, featuring ancient pottery and burial sites; and Quebradillas, home to large, intricately carved monolithic statues. A perfect blend of culture and history!",
+    "short":"landscape",
+    "rating":4.8,
+    "route":"Route",
+    "notes": "You can explore the route on horseback or walking and visit beautifull landscapes. Contact us for pricing details",
+    "price_detail": "The price depends on the number of people, let's connect to talk about it",
+    "details": [
+      {
+        "label": "Time",
+        "value": "6 hours",
+        "icon": "mingcute:alarm-2-fill",
+        "type": "time"
+      },
+      {
+        "label": "Type",
+        "value": "horse riding",
+        "icon": "mdi:horse-human",
+        "type": "tourType"
+      },
+      {
+        "label": "Price",
+        "value": "160.000",
+        "icon": "healthicons:money-bag",
+        "type": "price"
+      }
+    ]
+  },
+  {
+    "id":"12",
+    "name": "Naranjos - Alto de las chinas - Los robles",
+    "category":"Nature - Archeology",
+    "image": "/tours/alto_las_chinas.jpg",
+    "description":"Explore our rich archaeological heritage visiting: Los Naranjos, known for its ancient tombs and stone carvings; Alto de las Chinas, featuring three funerary chambers and cylindrical monoliths; and Los Robles, home to large, intricately carved statues.",
+    "short":"landscape",
+    "rating":4.8,
+    "route":"route",
+    "notes": "You can explore the route on horseback or walking and visit beautifull landscapes. Contact us for pricing details",
+    "price_detail": "The price depends on the number of people, let's connect to talk about it",
+    "details": [
+      {
+        "label": "Time",
+        "value": "6 hours",
+        "icon": "mingcute:alarm-2-fill",
+        "type": "time"
+      },
+      {
+        "label": "Type",
+        "value": "horse riding",
+        "icon": "mdi:horse-human",
+        "type": "tourType"
+      },
+      {
+        "label": "Price",
+        "value": "160.000",
+        "icon": "healthicons:money-bag",
+        "type": "price"
+      }
+    ]
+  },
+  {
+    "id":"13",
+    "name": "La Gaitana",
+    "category":"Nature - Archeology",
+    "image": "/tours/la_gaitana.jpg",
+    "description":"Visit La Gaitana, an archaeological park near San Agustín, where you can explore ancient sculptures and ceremonial sites that reveal the rich cultural heritage of the region’s ancestral peoples. A perfect blend of history and nature!",
+    "short":"landscape",
+    "rating":4.8,
+    "route":"Route",
+    "notes": "You can explore the route on horseback or by car and visit beautifull landscapes. Contact us for pricing details",
+    "price_detail": "The price depends on the number of people, let's connect to talk about it",
+    "details": [
+      {
+        "label": "Time",
+        "value": "2 Days",
+        "icon": "mingcute:alarm-2-fill",
+        "type": "time"
+      },
+      {
+        "label": "Type",
+        "value": "horse riding",
+        "icon": "mdi:horse-human",
+        "type": "tourType"
+      },
+      {
+        "label": "Price",
+        "value": "600.000",
+        "icon": "healthicons:money-bag",
+        "type": "price"
+      }
+    ]
+  }
+]

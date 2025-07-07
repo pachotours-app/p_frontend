@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: relative;
+  width: 90%;
+  max-width: 725px;
+  aspect-ratio: 16 / 9;
+}
+
+.wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.description {
+  font-size: 14px;
+  color: var(--color-text-dark);
+  margin-top: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 90%;
+  font-style: italic;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 95%;
+    max-width: 480px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+}

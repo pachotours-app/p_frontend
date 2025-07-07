@@ -1,0 +1,122 @@
+[
+  {
+    "id":"1",
+    "name": "Hotel el Maco",
+    "category":"Hotel - Restaurante",
+    "image": "/accommodation/maco.jpg",
+    "description":"Finca El Maco is not only a hotel, it is the home of René, Paty, Yolanda and Yanay, and is also considered the second home of our staff Amparo, Nelson, Fabián and Tatiana, as well as many guests and friends of this house who have visited us more than once since we started operating in 1996.",
+    "short":"Hotel camping",
+    "rating":4.8,
+    "notes": "Contact number +57 320 3755982",
+    "details": [
+      {
+        "label": "Check-In",
+        "value": "2:00 pm",
+        "icon": "akar-icons:check-in",
+        "type": "Check-In"
+      },
+      {
+        "label": "Check-Out",
+        "value": "11:00 am",
+        "icon": "material-symbols:siren-check-outline",
+        "type": "Check-Out"
+      },
+      {
+        "label": "Breakfast",
+        "value": "Courtesy",
+        "icon": "fluent-mdl2:breakfast",
+        "type": "time"
+      }
+    ]
+  },
+  {
+    "id":"2",
+    "name": "Hotel Antahkarana",
+    "category":"Casa Hotel",
+    "image": "/accommodation/Antakarhana.jpeg",
+    "description":"At Antakarahna, you can enjoy the most stunning panoramic views and the warm company of the Arcos Muñoz family, immersing yourself in the heart of Colombian culture.",
+    "short":"Hotel",
+    "rating":4.8,
+    "notes": "Contact number +57 311 4160807",
+    "details": [
+      {
+        "label": "Check-In",
+        "value": "2:00 pm",
+        "icon": "akar-icons:check-in",
+        "type": "Check-In"
+      },
+      {
+        "label": "Check-Out",
+        "value": "11:00 am",
+        "icon": "material-symbols:siren-check-outline",
+        "type": "Check-Out"
+      },
+      {
+        "label": "Breakfast",
+        "value": "Courtesy",
+        "icon": "fluent-mdl2:breakfast",
+        "type": "time"
+      }
+    ]
+  },
+  {
+    "id":"3",
+    "name": "TierrActiva",
+    "category":"Hotel - Aditional services",
+    "image": "/accommodation/tierractiva.jpeg",
+    "description":"At Tierractiva, we want you to experience the beauty and healing that Mother Earth does to us, rural women, when we work in silence and consciously connect with Her.",
+    "short":"Eco Hotel - restaurant",
+    "rating":4.8,
+    "notes": "You can do many activities, contact number +57 312 4762181",
+    "details": [
+      {
+        "label": "Check-In",
+        "value": "2:00 pm",
+        "icon": "akar-icons:check-in",
+        "type": "Check-In"
+      },
+      {
+        "label": "Check-Out",
+        "value": "11:00 am",
+        "icon": "material-symbols:siren-check-outline",
+        "type": "Check-Out"
+      },
+      {
+        "label": "Breakfast",
+        "value": "Courtesy",
+        "icon": "fluent-mdl2:breakfast",
+        "type": "Food"
+      }
+    ]
+  },
+  {
+    "id":"4",
+    "name": "Volunteering",
+    "category":"Volunteering",
+    "image": "/accommodation/volunteering_cabin.jpg",
+    "description":"Stay in a cozy cabin surrounded by nature, offered only to volunteers. In exchange for 4 hours of daily help (like taking my father to town by motorcycle or preparing horses for tours). Enjoy a peaceful retreat with internet, a kitchenette, and time to explore and relax after your tasks.",
+    "short":"Eco hotel - Volunteering",
+    "rating":4.8,
+    "notes": "You will have a free day, don't worry our work is easy to do be part of our family",
+    "details": [
+      {
+        "label": "Cook",
+        "value": "Cooking",
+        "icon": "simple-icons:mealie",
+        "type": "Cook"
+      },
+      {
+        "label": "Wifi",
+        "value": "Free Wifi",
+        "icon": "material-symbols:wifi-rounded",
+        "type": "wifi"
+      },
+      {
+        "label": "Free day",
+        "value": "Free day",
+        "icon": "mdi:calendar-check",
+        "type": "Free Day"
+      }
+    ]
+  }
+]

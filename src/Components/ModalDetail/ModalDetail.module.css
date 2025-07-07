@@ -1,0 +1,146 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 900px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 2rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.tourTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.tourMeta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.tourGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .tourGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.tourImageContainer {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+  .tourImageContainer {
+    grid-column: 1;
+  }
+}
+
+.tourImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.tourInfo {
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.tourShort {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.infoHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.55rem;
+  font-weight: bold;
+}
+
+.tourValue {
+  font-size:1.4rem;
+  margin-left: 1rem;
+}
+
+.tourPrice {
+  font-size: 1.5rem;
+  color: #2f9e44;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.tourDescription {
+  grid-column: 1 / -1;
+  font-size: 1.4rem;
+}
+
+.tourDescription p {
+  margin-top: 15px;
+}
+
+.tourPriceDetail {
+  color: #2f9e44;
+  font-weight: bold;
+}
+
+.tourRoute {
+  grid-column: 1 / -1;
+}
+
+.tourCategory {
+  background-color: #e9ecef;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 1.4rem;
+}
+
+.rating_count {
+  margin-left: 4px;
+  color: #666;
+  font-size: 1.4rem;
+}
