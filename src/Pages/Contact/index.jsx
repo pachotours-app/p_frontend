@@ -28,7 +28,7 @@ function Contact() {
 		  <Icon icon="mdi:whatsapp" className={styles.icon}/>
 		</span>
                 <span className={styles.data}>
-		  <a href="https://wa.me/573118277972?text=Hello!%20I%20want%20to%20take%20a%20tour." target="_blank" rel="noopener noreferrer">+57 323 202 6208</a>
+		  <a href="https://wa.me/573203755982?text=Hello!%20I%20want%20to%20take%20a%20tour." target="_blank" rel="noopener noreferrer">+57 320 375 5982</a>
 		</span>
             </li>
             <li>
