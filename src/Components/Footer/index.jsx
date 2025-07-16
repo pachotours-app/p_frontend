@@ -59,7 +59,7 @@ export const Footer = () => {
 	<a href="https://www.instagram.com/pachotourssanagustin/" target="_blank" rel="noopener noreferrer"><Icon icon="mdi:instagram" className={styles.icon}/></a>
 	<a href="https://www.youtube.com/@pachotours1483" target="_blank" rel="noopener noreferrer"><Icon icon="mdi:youtube" className={styles.icon} /></a>
 	<a href="mailto:pachitocampesinito@hotmail.com"><Icon icon="mdi:gmail" className={styles.icon} /></a>
-	<a href="https://wa.me/573118277972?text=Hello!%20I%20want%20to%20take%20a%20tour." target="_blank" rel="noopener noreferrer"><Icon icon="mdi:whatsapp" className={styles.icon} /></a>
+	<a href="https://wa.me/573203755982?text=Hello!%20I%20want%20to%20take%20a%20tour." target="_blank" rel="noopener noreferrer"><Icon icon="mdi:whatsapp" className={styles.icon} /></a>
 	      </section>
       <hr />
       <section className={styles.final_section}>
