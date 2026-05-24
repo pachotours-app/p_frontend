@@ -1,7 +1,5 @@
 import { useEffect, useRef } from 'react';
 import { Icon } from '@iconify-icon/react';
-import { Rating } from '@smastrom/react-rating';
-import '@smastrom/react-rating/style.css';
 import { Picture } from '@/Components/Picture';
 import styles from './ModalDetail.module.css';
 
@@ -31,11 +29,15 @@ export const ModalDetail = ({ isOpen, onClose, tour }) => {
 
   if (!isOpen || !tour) return null;
 
+  const details = tour.details ?? [];
+  const price = details.find((d) => d.type === 'price');
+  const chips = details.filter((d) => d.type !== 'price');
+
   return (
     <section className={styles.modalOverlay} onClick={onClose}>
       <div
         className={styles.modalContent}
-        onClick={e => e.stopPropagation()}
+        onClick={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-tour-title"
@@ -46,54 +48,80 @@ export const ModalDetail = ({ isOpen, onClose, tour }) => {
           onClick={onClose}
           aria-label="Close"
         >
-          &times;
+          <Icon icon="mdi:close" width="22" aria-hidden="true" />
         </button>
 
-        <h2 id="modal-tour-title" className={styles.tourTitle}>{tour.name}</h2>
-        <div className={styles.tourMeta}>
-          <span className={styles.tourCategory}>{tour.category}</span>
-          <Rating 
-            value={tour.rating} 
-            readOnly 
-            style={{ maxWidth: 100 }}
-          />
-	  <span className={styles.rating_count}>({tour.rating} reviews)</span>
-        </div>
-
-        <div className={styles.tourGrid}>
-          <div className={styles.tourImageContainer}>
+        <div className={styles.header}>
+          <div className={styles.imageWrap}>
+            {tour.category && <span className={styles.category}>{tour.category}</span>}
             <Picture
               src={tour.image}
               alt={tour.name}
-              className={styles.tourImage}
-              sizes="(max-width: 768px) 90vw, 450px"
+              className={styles.image}
+              sizes="(max-width: 720px) 90vw, 420px"
             />
           </div>
 
-          <div className={styles.tourInfo}>
-	    <p className={styles.tourShort}>{tour.short}</p>
-            {tour.details.map((detail, index) => (
-              <div key={index} className={styles.infoSection}>
-                <h3 className={styles.infoHeader}>
-                  <Icon icon={detail.icon} width="20" />
-                  {detail.label}
-                </h3>
-                <p className={detail.type === 'price' ? styles.tourPrice : styles.tourValue}>
-                  {detail.type === 'price' ? '$' : ''}{detail.value}
-                </p>
-              </div>
-            ))}
-	    <div className={styles.tourDescription}>
-	      <h3>Description</h3>
-	      <p>{tour.description}</p>
-	    </div>
-          </div>
+          <div className={styles.headerInfo}>
+            <div className={styles.titleRow}>
+              <h2 id="modal-tour-title" className={styles.title}>{tour.name}</h2>
+              {tour.rating != null && (
+                <span className={styles.ratingBadge}>
+                  <Icon icon="mdi:star" width="16" aria-hidden="true" />
+                  {tour.rating}
+                </span>
+              )}
+            </div>
 
-          <div className={styles.tourDescription}>
-            <h3>Notes</h3>
-            <p>{tour.notes}</p>
-	    <p className={styles.tourPriceDetail}>{tour.price_detail}</p>
+            {tour.short && <p className={styles.short}>{tour.short}</p>}
+
+            {chips.length > 0 && (
+              <div className={styles.chips}>
+                {chips.map((d, i) => (
+                  <span key={i} className={styles.chip}>
+                    <Icon icon={d.icon} width="18" aria-hidden="true" />
+                    <span className={styles.chipLabel}>{d.label}:</span>
+                    <span className={styles.chipValue}>{d.value}</span>
+                  </span>
+                ))}
+              </div>
+            )}
+
+            {price && (
+              <div className={styles.priceCallout}>
+                <Icon
+                  icon="mdi:account-group"
+                  width="30"
+                  aria-hidden="true"
+                  className={styles.priceIcon}
+                />
+                <div className={styles.priceBody}>
+                  <span className={styles.priceLine}>
+                    <span className={styles.priceFrom}>From</span>
+                    <span className={styles.priceValue} itemProp="price">${price.value}</span>
+                  </span>
+                  {tour.price_detail && (
+                    <p className={styles.priceNote}>{tour.price_detail}</p>
+                  )}
+                </div>
+              </div>
+            )}
           </div>
+        </div>
+
+        <div className={styles.body}>
+          {tour.description && (
+            <section className={styles.section}>
+              <h3 className={styles.sectionTitle}>About</h3>
+              <p>{tour.description}</p>
+            </section>
+          )}
+          {tour.notes && (
+            <section className={styles.section}>
+              <h3 className={styles.sectionTitle}>Good to know</h3>
+              <p>{tour.notes}</p>
+            </section>
+          )}
         </div>
       </div>
     </section>
