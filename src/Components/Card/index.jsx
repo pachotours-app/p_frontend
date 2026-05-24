@@ -39,7 +39,7 @@ export const Card = ({ data }) => {
               {chips.map((d, i) => (
                 <span key={i} className={styles.chip}>
                   <Icon icon={d.icon} width="18" aria-hidden="true" />
-                  <span className={styles.chipLabel}>{d.label}</span>
+                  <span className={styles.chipLabel}>{d.label}:</span>
                   <span className={styles.chipValue}>{d.value}</span>
                 </span>
               ))}
