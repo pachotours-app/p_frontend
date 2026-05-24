@@ -64,23 +64,6 @@
   margin-bottom: 1.75rem;
 }
 
-@media (min-width: 720px) {
-  .header {
-    grid-template-columns: 420px 1fr;
-    align-items: stretch;
-  }
-
-  /* Let the grid stretch the image column to the info panel's height. */
-  .imageWrap {
-    height: auto;
-  }
-
-  /* Keep the title row clear of the absolutely-positioned close button. */
-  .titleRow {
-    padding-right: 3.5rem;
-  }
-}
-
 .imageWrap {
   position: relative;
   height: 260px;
@@ -96,6 +79,25 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Desktop: 2-column header. Declared AFTER the base rules above so these win
+   in the cascade — the grid stretches the image column to the panel height. */
+@media (min-width: 720px) {
+  .header {
+    grid-template-columns: 420px 1fr;
+    align-items: stretch;
+  }
+
+  .imageWrap {
+    height: auto;
+    min-height: 260px;
+  }
+
+  /* Keep the title row clear of the absolutely-positioned close button. */
+  .titleRow {
+    padding-right: 3.5rem;
+  }
 }
 
 .category {
