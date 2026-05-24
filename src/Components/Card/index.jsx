@@ -52,11 +52,11 @@ export const Card = ({ data }) => {
           <div className={styles.footer}>
             {price ? (
               <>
-                <span className={styles.priceLabel}>Desde</span>
+                <span className={styles.priceLabel}>From</span>
                 <span className={styles.price} itemProp="price">${price.value}</span>
               </>
             ) : (
-              <span className={styles.cta}>Ver detalles</span>
+              <span className={styles.cta}>View details</span>
             )}
             <Icon
               icon="mdi:chevron-right"

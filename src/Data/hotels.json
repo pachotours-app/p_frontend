@@ -2,7 +2,7 @@
   {
     "id":"1",
     "name": "Hotel el Maco",
-    "category":"Hotel - Restaurante",
+    "category":"Hotel - Restaurant",
     "image": "/accommodation/maco.jpg",
     "description":"Finca El Maco is not only a hotel, it is the home of René, Paty, Yolanda and Yanay, and is also considered the second home of our staff Amparo, Nelson, Fabián and Tatiana, as well as many guests and friends of this house who have visited us more than once since we started operating in 1996.",
     "short":"Hotel camping",
@@ -32,7 +32,7 @@
   {
     "id":"2",
     "name": "Hotel Antahkarana",
-    "category":"Casa Hotel",
+    "category":"Guesthouse",
     "image": "/accommodation/Antakarhana.jpeg",
     "description":"At Antakarahna, you can enjoy the most stunning panoramic views and the warm company of the Arcos Muñoz family, immersing yourself in the heart of Colombian culture.",
     "short":"Hotel",
