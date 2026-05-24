@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { Icon } from '@iconify-icon/react';
 import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css';
@@ -5,14 +6,50 @@ import { Picture } from '@/Components/Picture';
 import styles from './ModalDetail.module.css';
 
 export const ModalDetail = ({ isOpen, onClose, tour }) => {
+  const closeRef = useRef(null);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const onKeyDown = (e) => {
+      if (e.key === 'Escape') onClose();
+    };
+    document.addEventListener('keydown', onKeyDown);
+
+    // Lock body scroll while the dialog is open.
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    // Move focus into the dialog.
+    closeRef.current?.focus();
+
+    return () => {
+      document.removeEventListener('keydown', onKeyDown);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [isOpen, onClose]);
+
   if (!isOpen || !tour) return null;
 
   return (
     <section className={styles.modalOverlay} onClick={onClose}>
-      <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
-        <button className={styles.closeButton} onClick={onClose}>&times;</button>
-        
-        <h2 className={styles.tourTitle}>{tour.name}</h2>
+      <div
+        className={styles.modalContent}
+        onClick={e => e.stopPropagation()}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-tour-title"
+      >
+        <button
+          ref={closeRef}
+          className={styles.closeButton}
+          onClick={onClose}
+          aria-label="Close"
+        >
+          &times;
+        </button>
+
+        <h2 id="modal-tour-title" className={styles.tourTitle}>{tour.name}</h2>
         <div className={styles.tourMeta}>
           <span className={styles.tourCategory}>{tour.category}</span>
           <Rating 

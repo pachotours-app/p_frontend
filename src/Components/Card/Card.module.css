@@ -7,11 +7,17 @@
   margin-top: 3rem;
   margin-bottom: 3rem;
   display: block;
-  background: white;
-  border-radius: 5px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: var(--surface-raised);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--color-shadow);
   overflow: hidden;
   cursor: pointer;
+  transition: transform 300ms var(--ease-out), box-shadow 300ms var(--ease-out);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px var(--color-shadow);
 }
 
 figure {
@@ -27,13 +33,13 @@ figure {
   height:100%;
   border-radius:0px;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 600ms var(--ease-out);
   margin: 0;
   padding: 0;
 }
 
 .card:hover .card_img {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 .category {

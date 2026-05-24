@@ -6,9 +6,9 @@ const Carousel = (data) => {
   };
 
   return (
-    <>
-      <h1 style={style} className={styles.carousel}>{data.data[0]}</h1>
-    </>
+    <h1 style={style} className={styles.carousel}>
+      <span className={styles.title}>{data.data[0]}</span>
+    </h1>
   );
 };
 
