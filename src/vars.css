@@ -8,13 +8,10 @@
   --brand-500: #2e8b57;
   --brand-600: #236b44;
   --brand-700: #1a5234;
-  --brand-800: #123a25;
   --brand-900: #0a2417;
 
   /* ---- Accent: terracota / ocre (arqueología, café) ---- */
   --accent-50:  #faf0e4;
-  --accent-100: #f2ddc3;
-  --accent-400: #d99a55;
   --accent-500: #c8803a;
   --accent-600: #a8662b;
 
@@ -50,7 +47,5 @@
   --color-hover-bg-dark: var(--brand-300);
   --color-hover-bg-light: var(--brand-500);
   --color-decorations: var(--accent-500);
-  --color-aux: var(--text-secondary);
-  --color-aux-3: var(--brand-700);
   --color-green: var(--brand-600);
 }
