@@ -1,58 +1,78 @@
 import styles from './Card.module.css'
 import { Icon } from '@iconify-icon/react';
-import { Rating } from '@smastrom/react-rating'
-import '@smastrom/react-rating/style.css'
 import { useState } from 'react';
 import { ModalDetail } from '@/Components/ModalDetail';
 import { Picture } from '@/Components/Picture';
 
-export const Card = (data) => {
+export const Card = ({ data }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  
+
+  const details = data.details ?? [];
+  const price = details.find((d) => d.type === 'price');
+  const chips = details.filter((d) => d.type !== 'price');
+
   return (
     <>
-    <article className={styles.card} onClick={() => setIsModalOpen(true)}>
-      <figure>
-	<span className={styles.category}>{data.data.category}</span>
-	<Picture
-	  src={data.data.image}
-	  className={styles.card_img}
-	  alt={data.data.name}
-	  sizes="(max-width: 768px) 90vw, 380px"
-	/>
-      </figure>
-      <div className={styles.card_content}>
-	<h3>{data.data.name}</h3>
-        <div className={styles.rating}>
-          <Rating
-            value={data.data.rating}
-            readOnly
-            style={{ maxWidth: 100 }}
+      <article className={styles.card} onClick={() => setIsModalOpen(true)}>
+        <figure className={styles.figure}>
+          {data.category && <span className={styles.category}>{data.category}</span>}
+          {data.rating != null && (
+            <span className={styles.ratingBadge}>
+              <Icon icon="mdi:star" width="15" aria-hidden="true" />
+              {data.rating}
+            </span>
+          )}
+          <Picture
+            src={data.image}
+            className={styles.card_img}
+            alt={data.name}
+            sizes="(max-width: 768px) 90vw, 380px"
           />
-          <span className={styles.rating_count}>({data.data.rating} reviews)</span>
+        </figure>
+
+        <div className={styles.card_content}>
+          <h3 className={styles.name}>{data.name}</h3>
+          {data.short && <p className={styles.short}>{data.short}</p>}
+
+          {chips.length > 0 && (
+            <div className={styles.chips}>
+              {chips.map((d, i) => (
+                <span
+                  key={i}
+                  className={`${styles.chip} ${i % 2 === 0 ? styles.chipA : styles.chipB}`}
+                >
+                  <Icon icon={d.icon} width="18" aria-hidden="true" />
+                  <span className={styles.chipLabel}>{d.label}</span>
+                  <span className={styles.chipValue}>{d.value}</span>
+                </span>
+              ))}
+            </div>
+          )}
+
+          <div className={styles.footer}>
+            {price ? (
+              <>
+                <span className={styles.priceLabel}>Desde</span>
+                <span className={styles.price} itemProp="price">${price.value}</span>
+              </>
+            ) : (
+              <span className={styles.cta}>Ver detalles</span>
+            )}
+            <Icon
+              icon="mdi:chevron-right"
+              className={styles.chevron}
+              width="22"
+              aria-hidden="true"
+            />
+          </div>
         </div>
-	<p>{data.data.short}</p>
-	{data.data.details?.map((detail, index) => (
-          <span key={index} className={styles.details_display}>
-            <span className={styles.icon_and_text}>
-              <Icon icon={detail.icon} width="25px" height="25px" />
-              <span>{detail.label}:</span>
-            </span>
-            <span 
-              className={ detail.type === 'price' ? styles.details_price : styles.details_value}
-              {...(detail.type === 'price' && { itemProp: "price" })}
-            >
-              {detail.type === 'price' ? `$${detail.value}` : detail.value}
-            </span>
-          </span>
-        ))}
-      </div>
-    </article>
-    <ModalDetail 
+      </article>
+
+      <ModalDetail
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        tour={data.data}
+        tour={data}
       />
     </>
-  )
-}
+  );
+};
