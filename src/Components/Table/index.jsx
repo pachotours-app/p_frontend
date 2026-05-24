@@ -30,14 +30,14 @@ export const Table = () => {
 
             <span className={styles.meta}>
               {time && (
-                <span className={styles.metaItem}>
-                  <Icon icon={time.icon} width="18" aria-hidden="true" />
+                <span className={`${styles.chip} ${styles.chipTime}`}>
+                  <Icon icon={time.icon} width="20" aria-hidden="true" />
                   {time.value}
                 </span>
               )}
               {type && (
-                <span className={styles.metaItem}>
-                  <Icon icon={type.icon} width="18" aria-hidden="true" />
+                <span className={`${styles.chip} ${styles.chipType}`}>
+                  <Icon icon={type.icon} width="20" aria-hidden="true" />
                   {type.value}
                 </span>
               )}
