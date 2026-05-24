@@ -42,7 +42,7 @@
       {
         "label": "Time",
         "value": "2 hours",
-        "icon": "fa-solid:hourglass-start",
+        "icon": "mingcute:sandglass-fill",
         "type": "time"
       },
       {
