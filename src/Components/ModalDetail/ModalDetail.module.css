@@ -89,9 +89,10 @@
     align-items: stretch;
   }
 
+  /* No min-height: the image follows the panel's exact height so the two
+     always end at the same level (short and long titles alike). */
   .imageWrap {
     height: auto;
-    min-height: 260px;
   }
 
   /* Keep the title row clear of the absolutely-positioned close button. */
