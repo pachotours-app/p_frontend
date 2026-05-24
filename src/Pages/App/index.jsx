@@ -1,19 +1,20 @@
 // External dependencies
+import { lazy, Suspense } from 'react'
 import { useRoutes, BrowserRouter } from 'react-router-dom'
 
 // Components
 import { NavBar } from '@/Components/NavBar'
 import { Footer } from '@/Components/Footer'
 
-// Pages
+// Pages — eager: Home is the landing route, lazy: everything else
 import { Home } from '@/Pages/Home'
-import About from '@/Pages/About'
-import Tours from '@/Pages/Tours'
-import Contact from '@/Pages/Contact'
-import NotFound from '@/Pages/NotFound'
-import Activities from '@/Pages/Activities'
-import Volunteering from '@/Pages/Volunteering'
-import Accommodation from '@/Pages/Accommodation'
+const About = lazy(() => import('@/Pages/About'))
+const Tours = lazy(() => import('@/Pages/Tours'))
+const Contact = lazy(() => import('@/Pages/Contact'))
+const NotFound = lazy(() => import('@/Pages/NotFound'))
+const Activities = lazy(() => import('@/Pages/Activities'))
+const Volunteering = lazy(() => import('@/Pages/Volunteering'))
+const Accommodation = lazy(() => import('@/Pages/Accommodation'))
 
 const AppRoutes = () => {
   const routes = useRoutes([
@@ -32,7 +33,9 @@ const AppRoutes = () => {
 function App() {
   return (
     <BrowserRouter>
-      <AppRoutes />
+      <Suspense fallback={null}>
+        <AppRoutes />
+      </Suspense>
       <NavBar />
       <Footer />
     </BrowserRouter>
