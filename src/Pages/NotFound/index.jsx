@@ -2,7 +2,7 @@ import { Layout } from "@/Components/Layout"
 import Carousel from '@/Components/Carousel'
 
 function NotFound() {
-  const main = ["404 Page not found","/pacho.jpg"]
+  const main = ["404 Page not found","/home/pacho.jpg"]
   
   return (
     <Layout>

@@ -35,7 +35,7 @@ hr {
 
 .final_section a {
   color: var(--color-decorations);
-  font-style: bold;
+  font-weight: bold;
 }
 
 .logo_container {

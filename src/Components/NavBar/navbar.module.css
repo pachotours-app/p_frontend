@@ -47,7 +47,7 @@ nav ul a {
   content: "";
   height: 2px;
   bottom: -8px;
-  background-color:var(--color-hover-bg-ligth);
+  background-color:var(--color-hover-bg-light);
   transition: width 0.3s ease;
 }
 
