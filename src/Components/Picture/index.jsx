@@ -8,7 +8,7 @@ import manifest from '@/Data/imageManifest.json';
  *
  * Run `pnpm optimize:images` to generate the WebP variants + manifest.
  */
-const SOURCE_RE = /\.(jpe?g|png)$/i;
+const SOURCE_RE = /\.(jpe?g|png|webp)$/i;
 
 export const Picture = ({
   src,

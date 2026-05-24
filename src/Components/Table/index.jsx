@@ -1,49 +1,65 @@
 import tours from "../../Data/tours.json";
 import styles from './Table.module.css'
 import { useState } from 'react';
+import { Icon } from '@iconify-icon/react';
 import { ModalDetail } from '@/Components/ModalDetail';
+import { Picture } from '@/Components/Picture';
 
 export const Table = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedTour, setSelectedTour] = useState(null);
 
-  const handleDetailClick = (tour) => {
-    setSelectedTour(tour);
-    setIsModalOpen(true);
-  };
-
   return (
-    <div className={styles.table_container}>
-      <table className={styles.travel_table}>
-        <thead>
-          <tr>
-            <th>Destination</th>
-            <th>Time</th>
-            <th>Price</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {tours.slice(4).map((tour) => (
-            <tr key={tour.id}>
-              <td>{tour.name}</td>
-              <td>{tour.details[0].value}</td>
-              <td className={styles.price} itemProp="price">${tour.details[2].value}</td>
-              <td>
-                <button 
-                  className={styles.details_button}
-                  onClick={() => handleDetailClick(tour)}
-                >
-                  Details
-                </button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <ModalDetail 
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
+    <div className={styles.list}>
+      {tours.slice(4).map((tour) => {
+        const time = tour.details.find((d) => d.type === 'time');
+        const type = tour.details.find((d) => d.type === 'tourType');
+        const price = tour.details.find((d) => d.type === 'price');
+
+        return (
+          <button
+            key={tour.id}
+            className={styles.row}
+            onClick={() => setSelectedTour(tour)}
+            aria-label={`View details for ${tour.name}`}
+          >
+            <span className={styles.thumb}>
+              <Picture src={tour.image} alt="" sizes="96px" />
+            </span>
+
+            <span className={styles.name}>{tour.name}</span>
+
+            <span className={styles.meta}>
+              {time && (
+                <span className={styles.metaItem}>
+                  <Icon icon={time.icon} width="18" aria-hidden="true" />
+                  {time.value}
+                </span>
+              )}
+              {type && (
+                <span className={styles.metaItem}>
+                  <Icon icon={type.icon} width="18" aria-hidden="true" />
+                  {type.value}
+                </span>
+              )}
+            </span>
+
+            {price && (
+              <span className={styles.price} itemProp="price">${price.value}</span>
+            )}
+
+            <Icon
+              icon="mdi:chevron-right"
+              className={styles.chevron}
+              width="24"
+              aria-hidden="true"
+            />
+          </button>
+        );
+      })}
+
+      <ModalDetail
+        isOpen={!!selectedTour}
+        onClose={() => setSelectedTour(null)}
         tour={selectedTour}
       />
     </div>

@@ -26,7 +26,9 @@ const MANIFEST_PATH = path.join(ROOT, 'src', 'Data', 'imageManifest.json');
 
 const WIDTHS = [480, 768, 1200, 1920];
 const QUALITY = 78;
-const SOURCE_RE = /\.(jpe?g|png)$/i;
+const SOURCE_RE = /\.(jpe?g|png|webp)$/i;
+// Variants we generate, e.g. "name-480.webp" — never treat them as sources.
+const GENERATED_RE = /-\d+\.webp$/i;
 // Small UI assets served via plain <img>, not <Picture> — skip them.
 const SKIP_RE = /(^|\/)logo[^/]*$/i;
 
@@ -56,7 +58,7 @@ async function run() {
   let skipped = 0;
 
   for await (const file of walk(PUBLIC_DIR)) {
-    if (!SOURCE_RE.test(file)) continue;
+    if (!SOURCE_RE.test(file) || GENERATED_RE.test(file)) continue;
     const rel = path.relative(PUBLIC_DIR, file).split(path.sep).join('/');
     if (SKIP_RE.test(rel)) continue;
 
