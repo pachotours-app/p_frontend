@@ -87,19 +87,21 @@ export const ModalDetail = ({ isOpen, onClose, tour }) => {
               </div>
             )}
 
-            {price && (
+            {(price || tour.price_detail) && (
               <div className={styles.priceCallout}>
                 <Icon
-                  icon="mdi:account-group"
+                  icon={price ? 'mdi:account-group' : 'mdi:card-account-phone'}
                   width="30"
                   aria-hidden="true"
                   className={styles.priceIcon}
                 />
                 <div className={styles.priceBody}>
-                  <span className={styles.priceLine}>
-                    <span className={styles.priceFrom}>From</span>
-                    <span className={styles.priceValue} itemProp="price">${price.value}</span>
-                  </span>
+                  {price && (
+                    <span className={styles.priceLine}>
+                      <span className={styles.priceFrom}>From</span>
+                      <span className={styles.priceValue} itemProp="price">${price.value}</span>
+                    </span>
+                  )}
                   {tour.price_detail && (
                     <p className={styles.priceNote}>{tour.price_detail}</p>
                   )}

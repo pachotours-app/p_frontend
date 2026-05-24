@@ -8,6 +8,7 @@
     "short":"Hotel camping",
     "rating":4.8,
     "notes": "Contact number +57 320 3755982",
+    "price_detail": "Contact the owner to find out about prices.",
     "details": [
       {
         "label": "Check-In",
@@ -38,6 +39,7 @@
     "short":"Hotel",
     "rating":4.8,
     "notes": "Contact number +57 311 4160807",
+    "price_detail": "Contact the owner to find out about prices.",
     "details": [
       {
         "label": "Check-In",
@@ -68,6 +70,7 @@
     "short":"Eco Hotel - restaurant",
     "rating":4.8,
     "notes": "You can do many activities, contact number +57 312 4762181",
+    "price_detail": "Contact the owner to find out about prices.",
     "details": [
       {
         "label": "Check-In",
@@ -98,6 +101,7 @@
     "short":"Eco hotel - Volunteering",
     "rating":4.8,
     "notes": "You will have a free day, don't worry our work is easy to do be part of our family",
+    "price_detail": "Contact the owner to find out about prices.",
     "details": [
       {
         "label": "Cook",

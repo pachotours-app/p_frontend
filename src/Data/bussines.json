@@ -8,6 +8,7 @@
     "short":"Great music, amazing food",
     "rating":4.8,
     "notes": "Discover the beauty of our land. Contact number +57 320 3755982",
+    "price_detail": "Contact the owner to find out about prices.",
     "details": [
       {
         "label": "Music",
@@ -38,6 +39,7 @@
     "short":"TierrActiva Birdwatching",
     "rating":4.8,
     "notes": "Discover the beauty of our land. Contact number +57 312 4762181",
+    "price_detail": "Contact the owner to find out about prices.",
     "details": [
       {
         "label": "Time",
@@ -68,6 +70,7 @@
     "short":"TierrActiva healthy restaurant",
     "rating":4.8,
     "notes": "You can do many activities, contact number +57 312 4762181",
+    "price_detail": "Contact the owner to find out about prices.",
     "details": [
       {
         "label": "Food",
@@ -98,6 +101,7 @@
     "short":"Friendly atmosphere.",
     "rating":4.8,
     "notes": "Discover the beauty of our land. Contact number +57 320 3755982",
+    "price_detail": "Contact the owner to find out about prices.",
     "details": [
       {
         "label": "Food",
