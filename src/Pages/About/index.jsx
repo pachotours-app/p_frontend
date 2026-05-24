@@ -1,5 +1,6 @@
 import { Layout } from "@/Components/Layout"
 import Carousel from '@/Components/Carousel'
+import { Picture } from '@/Components/Picture'
 import styles from './About.module.css'
 
 function About() {
@@ -35,10 +36,10 @@ function About() {
 	      <h1>{item.title}</h1>
 	      <p>{item.text}</p>
 	    </section>
-            <img 
-              src={item.img} 
-              alt={`About us content ${index + 1}`} 
-              loading="lazy" 
+            <Picture
+              src={item.img}
+              alt={`About us content ${index + 1}`}
+              sizes="(max-width: 1087px) 80vw, 550px"
             />
           </article>
         ))}

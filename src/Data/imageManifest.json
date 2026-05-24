@@ -1,0 +1,142 @@
+{
+  "/about/house.jpg": [
+    480,
+    768,
+    1200,
+    1920
+  ],
+  "/about/main.jpg": [
+    480,
+    768,
+    1200,
+    1920
+  ],
+  "/about/us.jpg": [
+    480,
+    768,
+    1200
+  ],
+  "/accommodation/Antakarhana.jpeg": [
+    480,
+    768,
+    1200
+  ],
+  "/accommodation/bridge.jpeg": [
+    480,
+    768,
+    1200,
+    1920
+  ],
+  "/accommodation/maco.jpg": [
+    480,
+    768
+  ],
+  "/accommodation/tierractiva.jpeg": [
+    480,
+    768
+  ],
+  "/accommodation/volunteering_cabin.jpg": [
+    480,
+    768,
+    1200,
+    1920
+  ],
+  "/activities/birdwatching.jpeg": [
+    480,
+    768
+  ],
+  "/activities/culture.jpg": [
+    480,
+    768,
+    1200
+  ],
+  "/activities/maco_bar.jpg": [
+    480,
+    768
+  ],
+  "/activities/maco_res.jpg": [
+    480,
+    768
+  ],
+  "/activities/restaurant.jpeg": [
+    480,
+    768
+  ],
+  "/contact/contact.jpeg": [
+    480,
+    768,
+    1200,
+    1920
+  ],
+  "/home/pacho.jpg": [
+    480,
+    768,
+    1200
+  ],
+  "/tours/alto_las_chinas.jpg": [
+    480,
+    768
+  ],
+  "/tours/dos_cordilleras.jpeg": [
+    480,
+    768,
+    1200
+  ],
+  "/tours/el_cinco.jpeg": [
+    480,
+    768,
+    1200
+  ],
+  "/tours/estrecho.jpeg": [
+    480,
+    768,
+    1200
+  ],
+  "/tours/horses.jpg": [
+    480,
+    768,
+    1200,
+    1920
+  ],
+  "/tours/jabon.jpg": [
+    480
+  ],
+  "/tours/la_gaitana.jpg": [
+    480
+  ],
+  "/tours/macizo.jpg": [
+    480
+  ],
+  "/tours/route.jpeg": [
+    480,
+    768
+  ],
+  "/tours/sporadic.jpg": [
+    480,
+    768,
+    1200,
+    1920
+  ],
+  "/tours/tours.jpeg": [
+    480,
+    768,
+    1200,
+    1920
+  ],
+  "/tours/tres_chorros.jpeg": [
+    480,
+    768,
+    1200
+  ],
+  "/volunteer/volunteer.jpeg": [
+    480,
+    768,
+    1200,
+    1920
+  ],
+  "/volunteer/volunteering.jpg": [
+    480,
+    768,
+    1200
+  ]
+}

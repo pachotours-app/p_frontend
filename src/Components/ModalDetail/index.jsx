@@ -1,6 +1,7 @@
 import { Icon } from '@iconify-icon/react';
 import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css';
+import { Picture } from '@/Components/Picture';
 import styles from './ModalDetail.module.css';
 
 export const ModalDetail = ({ isOpen, onClose, tour }) => {
@@ -24,10 +25,11 @@ export const ModalDetail = ({ isOpen, onClose, tour }) => {
 
         <div className={styles.tourGrid}>
           <div className={styles.tourImageContainer}>
-            <img 
-              src={tour.image} 
+            <Picture
+              src={tour.image}
               alt={tour.name}
               className={styles.tourImage}
+              sizes="(max-width: 768px) 90vw, 450px"
             />
           </div>
 

@@ -15,3 +15,9 @@ html {
 body {
   background-color:var(--color-bg)
 }
+
+/* <picture> is a layout-transparent wrapper: the inner <img> behaves as a
+   direct child so existing img selectors and flex/grid layouts still apply. */
+picture {
+  display: contents;
+}

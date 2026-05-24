@@ -1,5 +1,6 @@
 import { Layout } from "@/Components/Layout"
 import Carousel from '@/Components/Carousel'
+import { Picture } from '@/Components/Picture'
 import styles from './Volunteering.module.css'
 
 function Volunteering() {
@@ -21,10 +22,10 @@ function Volunteering() {
 	    <h1>{content.title}</h1>
 	    <p>{content.text}</p>
 	  </section>
-	  <img
+	  <Picture
 	    src={content.img}
 	    alt={content.title}
-	    loading="lazy"
+	    sizes="(max-width: 992px) 80vw, 550px"
 	  />
 	</article>
       </section>

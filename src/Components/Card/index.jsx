@@ -2,8 +2,9 @@ import styles from './Card.module.css'
 import { Icon } from '@iconify-icon/react';
 import { Rating } from '@smastrom/react-rating'
 import '@smastrom/react-rating/style.css'
-import { useState } from 'react'; // Add this
-import { ModalDetail } from '@/Components/ModalDetail'; 
+import { useState } from 'react';
+import { ModalDetail } from '@/Components/ModalDetail';
+import { Picture } from '@/Components/Picture';
 
 export const Card = (data) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -13,10 +14,11 @@ export const Card = (data) => {
     <article className={styles.card} onClick={() => setIsModalOpen(true)}>
       <figure>
 	<span className={styles.category}>{data.data.category}</span>
-	<img
+	<Picture
 	  src={data.data.image}
 	  className={styles.card_img}
 	  alt={data.data.name}
+	  sizes="(max-width: 768px) 90vw, 380px"
 	/>
       </figure>
       <div className={styles.card_content}>
