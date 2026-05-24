@@ -87,8 +87,8 @@
 }
 
 .chipType {
-  background: var(--accent-50);
-  color: var(--accent-600);
+  background: var(--brand-50);
+  color: var(--brand-700);
   text-transform: capitalize;
 }
 

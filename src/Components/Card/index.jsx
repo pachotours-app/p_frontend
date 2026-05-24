@@ -37,10 +37,7 @@ export const Card = ({ data }) => {
           {chips.length > 0 && (
             <div className={styles.chips}>
               {chips.map((d, i) => (
-                <span
-                  key={i}
-                  className={`${styles.chip} ${i % 2 === 0 ? styles.chipA : styles.chipB}`}
-                >
+                <span key={i} className={styles.chip}>
                   <Icon icon={d.icon} width="18" aria-hidden="true" />
                   <span className={styles.chipLabel}>{d.label}</span>
                   <span className={styles.chipValue}>{d.value}</span>
