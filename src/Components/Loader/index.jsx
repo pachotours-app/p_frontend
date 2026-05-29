@@ -1,0 +1,10 @@
+import styles from './Loader.module.css'
+
+export const Loader = () => {
+  return (
+    <div className={styles.wrapper} role="status" aria-live="polite">
+      <div className={styles.spinner} />
+      <span className={styles.srOnly}>Cargando…</span>
+    </div>
+  )
+}

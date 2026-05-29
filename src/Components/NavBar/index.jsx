@@ -33,7 +33,17 @@ export const NavBar = () => {
 	/>
       </button>
 
-      <ul className={`${styles.nav_menu} ${menuOpen ? styles.open : ''}`}>
+      <div
+        className={`${styles.backdrop} ${menuOpen ? styles.backdropOpen : ''}`}
+        onClick={() => setMenuOpen(false)}
+      />
+
+      <ul
+        className={`${styles.nav_menu} ${menuOpen ? styles.open : ''}`}
+        onClick={(e) => {
+          if (!e.target.closest('a')) setMenuOpen(false);
+        }}
+      >
         <li className={styles.nav_item}>
           <NavLink
             to='/'

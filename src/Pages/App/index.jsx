@@ -1,10 +1,13 @@
 // External dependencies
 import { lazy, Suspense } from 'react'
-import { useRoutes, BrowserRouter } from 'react-router-dom'
+import { useRoutes, useLocation, BrowserRouter } from 'react-router-dom'
 
 // Components
 import { NavBar } from '@/Components/NavBar'
 import { Footer } from '@/Components/Footer'
+import { Loader } from '@/Components/Loader'
+
+import styles from './App.module.css'
 
 // Pages — eager: Home is the landing route, lazy: everything else
 import { Home } from '@/Pages/Home'
@@ -30,14 +33,25 @@ const AppRoutes = () => {
   return routes
 }
 
-function App() {
+const AppContent = () => {
+  const location = useLocation()
   return (
-    <BrowserRouter>
-      <Suspense fallback={null}>
-        <AppRoutes />
+    <>
+      <Suspense fallback={<Loader />}>
+        <div key={location.pathname} className={styles.page}>
+          <AppRoutes />
+        </div>
       </Suspense>
       <NavBar />
       <Footer />
+    </>
+  )
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
     </BrowserRouter>
   )
 }
